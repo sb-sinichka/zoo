@@ -14,6 +14,6 @@ def send_bot(message):
     downloaded_file = bot.download_file(file_info.file_path) 
     with open(file_name, 'wb') as new_file:
         new_file.write(downloaded_file)
-
-
+    with open(file_name, 'rb') as new_file:
+        bot.send_photo(message.chat.id,new_file)
 bot.polling()
