@@ -6,6 +6,7 @@ readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
     "imageai>=3.0.3",
+    "opencv-python>=5.0.0.93",
     "pytelegrambotapi>=4.34.0",
     "python-dotenv>=1.2.2",
 ]
